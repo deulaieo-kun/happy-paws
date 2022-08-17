@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* Initial Setup */
+:root {
+    --lg-font: 'Roboto', sans-serif;
+    --sm-font: 'Rubik', sans-serif;
+    --orange: #F66B0E;
+    --black: #112B3C;
+    --smoke-white: #EFEFEF;
+}
+
+body {
+    font-family: var(--sm-font);
+}
+
+
+/* Navbar */
+.navbar-brand img{
+    width: 30px;
+}
+
+#brand {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+#register {
+    background-color: var(--orange);
+    border: 1px black solid;
+    border-radius: 2px;
+}
+
+/* Hero */
+#hero {
+    background: url(../img/banner-img-1.jpg) top/cover;  
+}
