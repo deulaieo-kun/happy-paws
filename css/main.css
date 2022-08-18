@@ -13,6 +13,20 @@ body {
     font-family: var(--sm-font);
 }
 
+.btn:not(.nav-btns button){
+    background-color: white;
+    color: rgb(17, 43, 60);
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.btn:not(.nav-btns button):hover{
+    background: var(--orange);
+    color: white;
+    border: black;
+}
+
 
 /* Navbar */
 .navbar-brand img{
@@ -36,7 +50,12 @@ body {
     border-radius: 2px;
 }
 
+
 /* Hero */
 #hero {
-    background: url(../img/banner-img-4.jpg) top/cover;  
+    background: url(../img/banner-img-1.png) top/cover;  
+}
+
+#adopt {
+    padding-top: 60%;
 }

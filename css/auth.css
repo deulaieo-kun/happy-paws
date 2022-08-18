@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* Initial Setup */
+:root {
+    --lg-font: 'Roboto', sans-serif;
+    --sm-font: 'Rubik', sans-serif;
+    --orange: #F66B0E;
+    --black: #112B3C;
+    --smoke-white: #EFEFEF;
+}
+
+body {
+    font-family: var(--sm-font);
+}
+
+.login-page {
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(45deg, var(--orange), white);
+    padding: 70px;
+}
+
+.auth {
+    background-color: var(--smoke-white);
+    box-shadow: 0 3px 12px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+    padding: 10px 10%;
+}
+
+#brand {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.login-with-btn {
+    border: 1px solid var(--black);
+    border-radius: 45px;
+    width: 100%;
+    color: rgb(46, 46, 46);
+    height: 45px;
+    box-shadow: none;
+}
+
+.login-btn {
+    border: 1px solid var(--black);
+    border-radius: 45px;
+    width: 100%;
+    color: rgb(46, 46, 46);
+    height: 45px;
+    box-shadow: none;
+}
+
+.login-btn:hover{
+    border-radius: 45px;
+    width: 100%;
+    color: white;
+    background-color: var(--orange);
+}
+
+h6 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 7px;
+}
+h6:before, h6:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+h6:before {
+    margin-right: 10px
+}
+h6:after {
+    margin-left: 10px
+}
+

@@ -25,11 +25,13 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+    <nav
+      class="navbar nav-btns navbar-expand-lg navbar-light bg-white py-4 fixed-top"
+    >
       <div class="container px-2">
         <a
           href="index.html"
-          class="navbar-brand d-flex align-items-center justify-content-between"
+          class="navbar-brand d-flex align-items-center justify-content-between pe-5"
         >
           <i class="fa-solid fa-paw pe-2"></i>
           <span id="brand">HAPPY PAWS</span>
@@ -60,7 +62,7 @@
               <a href="#" class="nav-link text-dark">DOG PRODUCTS</a>
             </li>
             <li class="nav-item px-5 py-2">
-              <a href="#"
+              <a href="login.html"
                 ><button class="btn text-white" id="register">
                   SIGN IN / REGISTER
                 </button></a
@@ -72,13 +74,21 @@
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="vh-100" style="padding-top: 300px">
+    <section id="hero" class="vh-100">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-12">
-            <div class="d-flex align-items-center">
-              <h1 class="text-dark">Don't buy, ADOPT!</h1>
+          <div class="col-lg-5 col-10">
+            <div id="adopt">
+              <h1 class="text-white">Don't buy, ADOPT!</h1>
             </div>
+            <div class="pt-4">
+              <p class="lead text-white">
+                The unknown truth is that those animals like us, are conscious
+                beings with their own personality and feelings and therefore
+                deserve our respect and should be treated as equals.
+              </p>
+            </div>
+            <button class="btn text-center lead">Adopt Now</button>
           </div>
         </div>
       </div>
@@ -86,12 +96,13 @@
 
     <!-- Footer -->
     <footer class="bg-dark p-3 text-white position-relative">
-      <div class="container">
+      <div class="container text-center">
         <div>
-          <i class="fa-solid fa-paw pe-2"></i>
-          <span class="lead text-center pt-3"
-            >&copy; <i class="fa-solid fa-paw pe-2"></i>Happy Paws 2022</span
-          >
+          <span class="lead pt-3"
+            ><i class="fa-solid fa-paw pe-2"></i>Happy Paws 2022<i
+              class="fa-solid fa-paw ps-2"
+            ></i
+          ></span>
         </div>
       </div>
     </footer>
