@@ -14,7 +14,7 @@ body {
 }
 
 .btn:not(.nav-btns button){
-    background-color: white;
+    background-color: var(--smoke-white);
     color: rgb(17, 43, 60);
     padding: 10px 30px;
     border-radius: 30px;
@@ -26,7 +26,6 @@ body {
     color: white;
     border: black;
 }
-
 
 /* Navbar */
 .navbar-brand img{
@@ -58,4 +57,40 @@ body {
 
 #adopt {
     padding-top: 60%;
+}
+
+.featured i {
+    top: 10px;
+    right: 10px;
+}
+
+/* Featured */
+#featured {
+    background-color: var(--smoke-white);
+}
+
+.special-img span {
+    top: 8px;
+    right: 8px;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+/* Dog Foods */
+#dog-foods {
+    background-color: var(--smoke-white);
+}
+
+.dog-food span {
+    top: 8px;
+    right: 8px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.dog-food img {
+    height: 300px;
 }
