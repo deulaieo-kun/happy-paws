@@ -55,6 +55,10 @@ body {
     background: url(../img/banner-img-1.png) top/cover;  
 }
 
+.widen {
+    letter-spacing: 4px;
+}
+
 #adopt {
     padding-top: 60%;
 }
@@ -108,5 +112,21 @@ body {
     border-radius: 50%;
 }
 
+#newsletter .input-group {
+    max-width: 500px;
+} 
 
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
 
+#newsletter .btn {
+    background-color: var(--black);
+    color: white;
+    border: 1px solid var(--orange)
+}
+
+#newsletter .btn:hover {
+    background-color: var(--orange);
+}
