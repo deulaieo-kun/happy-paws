@@ -19,7 +19,7 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/auth.css" />
+    <link id="mainStyle" rel="stylesheet" href="css/auth.css" />
 
     <title>Happy Paws</title>
   </head>
@@ -48,7 +48,7 @@
                   >Email address or username</label
                 >
                 <input
-                  class="form-control auth-input"
+                  class="auth-input form-control auth-input"
                   type="email"
                   placeholder="Email address or username"
                 />
@@ -56,7 +56,7 @@
               <div class="mt-2 mb-2">
                 <label class="d-flex flex-row pb-1">Password</label>
                 <input
-                  class="form-control auth-input"
+                  class="auth-input form-control auth-input"
                   type="password"
                   placeholder="Password"
                 />
@@ -92,5 +92,27 @@
         </div>
       </div>
     </div>
+
+    <!-- Theme Change -->
+    <button id="theme_button" class="btn btn-theme" onclick="onThemeChange()">
+      <i id="theme_icon" class="fa fa-moon"></i>
+    </button>
+
+    <script>
+      function onThemeChange() {
+        // Variables
+        let cssStyleSheet = document.getElementById("mainStyle");
+        let cssLength = cssStyleSheet.href.length;
+        let path = cssStyleSheet.href.substring(cssLength - 9, cssLength);
+
+        if (path === "/auth.css") {
+          cssStyleSheet.href = "css/auth-dark.css";
+          document.getElementById("theme_icon").className = "fa fa-sun";
+        } else {
+          cssStyleSheet.href = "css/auth.css";
+          document.getElementById("theme_icon").className = "fa fa-moon";
+        }
+      }
+    </script>
   </body>
 </html>
