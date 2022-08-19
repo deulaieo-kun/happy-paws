@@ -99,3 +99,8 @@ h6:after {
     background: rgb(0, 0, 0, 0.3);
     color: #66fcf1;
 }
+
+.google {
+    background-color: var(--smoke-white);
+    color: black;
+}
