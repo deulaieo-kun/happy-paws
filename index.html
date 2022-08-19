@@ -31,7 +31,7 @@
       <div class="container px-2">
         <a
           href="index.html"
-          class="navbar-brand d-flex align-items-center justify-content-between pe-5"
+          class="navbar-brand d-flex align-items-center justify-content-between pe-5 pt-sm-2"
         >
           <i class="fa-solid fa-paw pe-2"></i>
           <span id="brand">HAPPY PAWS</span>
@@ -50,16 +50,16 @@
         <div class="collapse navbar-collapse ps-3" id="navMenu">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item px-2 py-2">
-              <a href="#featured" class="nav-link text-dark">Featured Dogs</a>
+              <a href="#featured" class="nav-link text-dark">FEATURED DOGS</a>
             </li>
             <li class="nav-item px-2 py-2">
-              <a href="#" class="nav-link text-dark">DOG PRODUCTS</a>
+              <a href="#accessories" class="nav-link text-dark">DOG ACCESSORIES</a>
             </li>
             <li class="nav-item px-2 py-2">
-              <a href="#" class="nav-link text-dark">DOG PRODUCTS</a>
+              <a href="#dog-foods" class="nav-link text-dark">DOG FOODS</a>
             </li>
             <li class="nav-item px-2 py-2">
-              <a href="#" class="nav-link text-dark">DOG PRODUCTS</a>
+              <a href="#about-us" class="nav-link text-dark">ABOUT</a>
             </li>
             <li class="nav-item px-5 py-2">
               <a href="login.html"
@@ -90,21 +90,75 @@
                 deserve our respect and should be treated as equals.
               </p>
             </div>
-            <a href="contact.html"
-              ><button class="btn text-center lead">Adopt Now</button></a
+            <a href="#modal"
+              ><button class="btn text-center lead" data-bs-toggle="modal"
+              data-bs-target="#modal-1">Adopt Now</button></a
             >
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal" id="modal-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Fur Parent's Information Sheet</h5>
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Fill out this form and we will get back to you</p>
+            <form action="">
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"
+                  >First Name:</label
+                >
+                <input type="text" class="form-control" id="first-name" />
+                <label for="first-name" class="col-form-label"
+                  >Last Name:</label
+                >
+                <input type="text" class="form-control" id="last-name" />
+                <label for="address" class="col-form-label">Address:</label>
+                <input type="text" class="form-control" id="address" />
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email" />
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="text" class="form-control" id="phone" />
+                <label for="consent" class="col-form-label">Are you willing to raise a dog?</label>
+                <select class="form-control" name="consent" id="consent">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                  </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button class="btn btn-primary" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- Featured Dogs -->
     <section id="featured" class="p-5">
       <div class="container">
-        <h1 class="text-center text-dark pt-5"><i class="fa-solid fa-paw pe-3"></i>FEATURED DOGS</h1>
+        <h2 class="text-center text-dark pt-5"><i class="fa-solid fa-paw pe-3"></i>FEATURED DOGS</h2>
         <p class="text-center lead text-dark">These adorable creatures have longed to find their permanent fur families. Maybe you are the one they're waiting for !</p>
         <div class="row pt-5">
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 pb-3">
             <div class="card bg-light">
               <div class="card-body text-center">
                 <div class="special-img position-relative overflow-hidden">
@@ -125,13 +179,14 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Reprehenderit.
                 </p>
-                <button type="submit" class="btn text-center w-75">
+                <a href="#modal"><button type="submit" class="btn text-center w-75" data-bs-toggle="modal"
+                  data-bs-target="#modal-1">
                   Adopt Me!
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 pb-3">
             <div class="card bg-light">
               <div class="card-body text-center">
                 <div class="special-img position-relative overflow-hidden">
@@ -151,13 +206,14 @@
                   I'll eat every food that you give me, I am not a picky eater
                   woof! woof! Lorem ipsum dolor sit amet consectetur.
                 </p>
-                <button type="submit" class="btn text-center w-75">
+                <a href="#modal"><button type="submit" class="btn text-center w-75" data-bs-toggle="modal"
+                  data-bs-target="#modal-1">
                   Adopt Me!
-                </butto>
+                </button></a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 pb-3">
             <div class="card bg-light">
               <div class="card-body text-center">
                 <div class="special-img position-relative overflow-hidden">
@@ -177,14 +233,15 @@
                   I am a responsible doggo, I clean up my mess no matter where
                   we go woof! woof! Lorem ipsum dolor sit amet consectetur.
                 </p>
-                <button type="submit" class="btn text-center w-75">
+                <a href="#modal"><button type="submit" class="btn text-center w-75" data-bs-toggle="modal"
+                  data-bs-target="#modal-1">
                   Adopt Me!
-                </button>
+                </button></a>
               
             </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 pb-3">
             <div class="card bg-light">
               <div class="card-body text-center">
                 <div class="special-img position-relative overflow-hidden">
@@ -205,52 +262,54 @@
                   woof! woof! Lorem ipsum dolor sit amet, consectetur
                   adipisicing.
                 </p>
-                <button type="submit" class="btn text-center w-75">
+                <a href="#modal"><button type="submit" class="btn text-center w-75" data-bs-toggle="modal"
+                  data-bs-target="#modal-1">
                   Adopt Me!
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
-          <div class="col-12 d-flex justify-content-center p-5">
-            <button class="btn text-center w-25">View All Dogs</button>
-          </div>
+          
+        </div>
+        <div class="col-12 d-flex justify-content-center p-3">
+          <button class="btn text-center w-50">View All Dogs</button>
         </div>
       </div>
     </section>
    
     <!-- Dog Accessories -->
-    <section class="p-5">
+    <section id="accessories" class="p-5">
       <div class="container">
-        <h1 class="text-center text-dark pt-5"><i class="fa-solid fa-paw pe-3"></i>DOG ACCESSORIES</h1>
+        <h2 class="text-center text-dark pt-5"><i class="fa-solid fa-paw pe-3"></i>DOG ACCESSORIES</h2>
         <p class="text-center lead text-dark">The perfect accessories for your favorite doggos, get it here at HAPPY PAWS !</p>
 
           <div class="row">
             <div class="col-md-6 col-lg-4 col-xl-3 p-2">
               <div class="position-relative overflow-hidden accessory">
                 <img
-                  src="img/accessory-1.png"
+                  src="img/accessory-2.png"
                   alt="special 1"
                   class="w-100"
                 />
               </div>
-              <div class="text-center">
-                <p class="text-capitalize mt-3 mb-1">set one</p>
-                <span class="fw-bold d-block">$99.99</span>
-                <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+              <div class="text-center pb-5">
+                <p class="text-capitalize mt-3 mb-1">Dog Backpack</p>
+                <span class="fw-bold d-block">₱ 1,699.95</span>
+                <a href="login.html" class="btn btn-primary mt-3">Buy</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2">
               <div class="position-relative overflow-hidden accessory">
                 <img
-                  src="img/accessory-2.png"
+                  src="img/accessory-1.png"
                   alt="special 2"
                   class="w-100"
                 />
               </div>
-              <div class="text-center">
-                <p class="text-capitalize mt-3 mb-1">set one</p>
-                <span class="fw-bold d-block">$99.99</span>
-                <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+              <div class="text-center pb-5">
+                <p class="text-capitalize mt-3 mb-1">Chucky Costume</p>
+                <span class="fw-bold d-block">₱ 999.95</span>
+                <a href="login.html" class="btn btn-primary mt-3">Buy</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2">
@@ -261,10 +320,10 @@
                   class="w-100"
                 />
               </div>
-              <div class="text-center">
-                <p class="text-capitalize mt-3 mb-1">set one</p>
-                <span class="fw-bold d-block">$99.99</span>
-                <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+              <div class="text-center pb-5">
+                <p class="text-capitalize mt-3 mb-1">Dog Bandanas</p>
+                <span class="fw-bold d-block">₱ 399.95</span>
+                <a href="login.html" class="btn btn-primary mt-3">Buy</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2">
@@ -275,10 +334,10 @@
                   class="w-100"
                 />
               </div>
-              <div class="text-center">
-                <p class="text-capitalize mt-3 mb-1">set one</p>
-                <span class="fw-bold d-block">$99.99</span>
-                <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+              <div class="text-center pb-5">
+                <p class="text-capitalize mt-3 mb-1">Chewable Toys</p>
+                <span class="fw-bold d-block">₱ 499.95</span>
+                <a href="login.html" class="btn btn-primary mt-3">Buy</a>
               </div>
             </div>
           </div>
@@ -286,12 +345,12 @@
     </section>
 
     <!-- Dog Foods -->
-    <section id="dog-foods" class="p-5 vh-100 bg-dark">
-      <div class="container carousel-inner">
-        <h1 class="text-center text-white"><i class="fa-solid fa-paw pe-2"></i>DOG FOODS</h1>
+    <section id="dog-foods" class="p-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center text-white"><i class="fa-solid fa-paw pe-2"></i>DOG FOODS</h2>
         <p class="text-center lead text-white">Let your doggos have a bite of these awesome treats only here at HAPPY PAWS !</p>
         <div class="row pt-5">
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 pb-3">
             <div class="card">
               <div class="card-body text-center">
                 <div class="position-relative overflow-hidden dog-food">
@@ -305,17 +364,17 @@
                   >sale</span
                 >
                 </div>
-                <p class="card-title lead mb-1">1.2kg Pedigree Dog Food</h3>
+                <p class="card-title lead mb-1">Pedigree Dog Food</h3>
                 <p class="card-text text-muted">
                   ₱ 1,499.95
                 </p>
-                <button type="submit" class="btn text-center w-75">
+                <a href="login.html"><button type="submit" class="btn text-center w-75">
                   Buy
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 pb-3">
             <div class="card">
               <div class="card-body text-center">
                 <div class="position-relative overflow-hidden dog-food">
@@ -333,13 +392,13 @@
                 <p class="card-text text-muted">
                   ₱ 799.95
                 </p>
-                <button type="submit" class="btn text-center w-75">
+                <a href="login.html"><button type="submit" class="btn text-center w-75">
                   Buy
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 pb-3">
             <div class="card">
               <div class="card-body text-center">
                 <div class="position-relative overflow-hidden dog-food">
@@ -357,13 +416,13 @@
                 <p class="card-text text-muted">
                   ₱ 2,299.95
                 </p>
-                <button type="submit" class="btn text-center w-75">
+                <a href="login.html"><button type="submit" class="btn text-center w-75">
                   Buy
-                </button>
+                </button></a>
             </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 pb-3">
             <div class="card">
               <div class="card-body text-center">
                 <div class="position-relative overflow-hidden dog-food">
@@ -381,23 +440,46 @@
                 <p class="card-text text-muted">
                   ₱ 999.95
                 </p>
-                <button type="submit" class="btn text-center w-75">
+                <a href="login.html"><button type="submit" class="btn text-center w-75">
                   Buy
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
-          <div class="col-12 d-flex justify-content-center pt-5">
-            <button class="btn text-center w-25">Go to the Shop</button>
+        </div>
+        <div class="col-12 d-flex justify-content-center p-3">
+          <a href="login.html" class="w-50"><button class="btn text-center w-100">Go to the Shop</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about-us" class="p-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center order-lg-0">
+            <div class="title p-3">
+              <h2 class="position-relative d-inline-block text-center"><i class="fa-solid fa-paw pe-2"></i>ABOUT US</h2>
+            </div>
+            <p class="lead text-muted">
+              Happy Paws is a non-profit organization established to provide a safe haven for stray dogs and others who do not have a permanent home and/or fur parents. In order to maintain enough funds for its operations, they also engage in selling dog products such as foods and accessories. All in all, it has helped many of our fur pals who now have a place where they actually belong.
+            </p>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <img
+              src="img/happy-paws-1.jpg"
+              alt="about-us image"
+              class="img-fluid d-none d-sm-inline-block"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <!-- FAQs -->
-    <section id="questions" class="p-5">
+    <section id="questions" class="py-3">
       <div class="container">
-        <h1 class="text-center text-dark pt-5 pb-3"><i class="fa-solid fa-paw pe-3"></i>FREQUENTLY ASKED QUESTIONS</h1>
+        <h2 class="text-center text-dark pt-5 pb-3"><i class="fa-solid fa-paw pe-3"></i>FREQUENTLY ASKED QUESTIONS</h2>
           <div id="questions" class="accordion accordion-flush">
             <!-- Question 1 -->
             <div class="accordion-item">
@@ -453,37 +535,59 @@
         </div>
     </section>
 
-    <!-- News Letter -->
-    <section id="newsletter" class="py-5">
+    <!-- Contact Info -->
+    <section class="p-5">
       <div class="container">
-        <div
-          class="d-flex align-items-center justify-content-center flex-column"
-        >
-          <div class="title text-center pt-3 pb-5">
-            <h1 class="text-center text-dark pt-5 pb-3"><i class="fa-solid fa-paw pe-3"></i>NEWSLETTER SUBSCRIPTION</h1>
-          </div>
-          <p class="text-center text-muted">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
-            quibusdam? Tempore sint eum provident.
-          </p>
-          <div class="input-group mb-3 mt-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Your Email ..."
-            />
-            <button class="btn btn-primary" type="submit">Subscribe</button>
-          </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="d-none d-md-block">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62808.63588342649!2d123.96813373442386!3d10.29861903226289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1659751152377!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
+          <div class="col-md-6">
+            <h2 class="text-center text-dark pt-5 pb-3"><i class="fa-solid fa-paw pe-3"></i>CONTACT INFO</h2>
+            <ul class="list-group list-group-flush lead">
+            <li class="list-group-item mt-3"><span class="fw-bold">Main Location: </span>5th Street, BGBNEAB Lapu-Lapu City</li>
+            <li class="list-group-item"><span class="fw-bold">Enrollment Phone: </span>0906 2417 893</li>
+            <li class="list-group-item"><span class="fw-bold">Inquiry Phone: </span>0998 9724 448</li>
+            <li class="list-group-item"><span class="fw-bold">Email: </span>happy_paws@gmail.com</li>
+            <li class="list-group-item"><span class="fw-bold">Facebook: </span>happy_paws.ph</li>
+          </ul>
+          </div>
+      </div>
       </div>
     </section>
 
+        <!-- News Letter -->
+        <section id="newsletter" class="py-3">
+          <div class="container">
+            <div
+              class="d-flex align-items-center justify-content-center flex-column"
+            >
+              <div class="title text-center pb-5">
+                <h2 class="text-center text-dark pt-5 pb-3"><i class="fa-solid fa-paw pe-3"></i>NEWSLETTER SUBSCRIPTION</h2>
+              </div>
+              <p class="text-center text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                quibusdam? Tempore sint eum provident.
+              </p>
+              <div class="input-group mb-3 mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Email ..."
+                />
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
     <!-- Footer -->
     <footer class="bg-dark p-3 text-white position-relative">
-      <div class="container text-center">
-        <div>
+      <div class="container">
+        <div class="text-center">
           <span class="lead pt-3"
-            ><i class="fa-solid fa-paw pe-2"></i>Happy Paws 2022<i
+            >&copy; <i class="fa-solid fa-paw px-2"></i>Happy Paws 2022<i
               class="fa-solid fa-paw ps-2"
             ></i
           ></span>

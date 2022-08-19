@@ -32,6 +32,10 @@ body {
     width: 30px;
 }
 
+.nav-link:hover {
+    color: var(--orange) !important;
+}
+
 #brand {
     letter-spacing: 2px;
     font-family: var(--lg-font);
@@ -87,6 +91,10 @@ body {
     background-color: var(--orange);
 }
 
+.text-orange {
+    color: var(--orange);
+}
+
 /* Dog Foods */
 #dog-foods {
     background-color: var(--smoke-white);
@@ -112,6 +120,7 @@ body {
     border-radius: 50%;
 }
 
+/* newsletter */
 #newsletter .input-group {
     max-width: 500px;
 } 
